@@ -9,3 +9,9 @@ function somaNumero(x,y){
 }
 
 console.log(somaNumero(5,8))
+
+function NomeIdade(nome,idade){
+    return `Meu nome é ${nome} e tenho ${idade} anos`
+}
+
+console.log(NomeIdade('Alexandre',8))
