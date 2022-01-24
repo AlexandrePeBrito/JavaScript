@@ -1,0 +1,31 @@
+const cliente ={
+    nome:'Alexandre',
+    idade:22,
+    cpf:'07828524420',
+    email:'alex@gmail.com',
+    dependente:[{
+        nome:'Ana',
+        parentesco:'Mae',
+        idade:51,
+        cpf:'07828524420',
+        email:'ana@gmail.com'
+    },{
+        nome:'Joselito',
+        parentesco:'pai',
+        idade:61,
+        cpf:'07828524420',
+        email:'joselito@gmail.com'
+    }],
+    saldo:100,
+    depositar:function(valor){
+        this.saldo+=valor
+    },
+    saque:function(valor){
+        this.saldo-=valor
+    }
+}
+console.log(cliente.saldo)
+cliente.depositar(50)
+console.log(cliente.saldo)
+cliente.saque(25)
+console.log(cliente.saldo)
