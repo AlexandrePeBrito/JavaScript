@@ -1,0 +1,29 @@
+class Cliente{
+    constructor(nome,email,cpf,saldo){
+        this.nome=nome
+        this.email=email
+        this.cpf=cpf
+        this.saldo=saldo
+    }
+
+    depositar(valor){
+        this.saldo+=valor
+    }
+
+    saque(valor){
+        this.saldo-=valor
+    }
+
+    extrato(){
+        console.log(`O seu saldo eh ${this.saldo}`)
+    }
+}
+
+
+const alexandre=new Cliente('alexandre','07828526609','alex@gmail,com',1000)
+
+alexandre.extrato()
+
+alexandre.saque(150)
+
+alexandre.extrato()
